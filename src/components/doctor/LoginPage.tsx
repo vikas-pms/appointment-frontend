@@ -4,7 +4,7 @@ import { useRouter } from 'next/navigation';
 import { useState } from 'react';
 
 function LoginPage() {
-  const router = useRouter()
+  const route = useRouter();
   const [formData, setFormData] = useState({
     email: '',
     password: '',
@@ -84,7 +84,7 @@ function LoginPage() {
           </div>
 
           <button
-          onClick={()=>router.push("/")}
+          onClick={()=>route.push("/doctor/dashboard")}
             type="submit"
             className="w-full py-2 px-4 bg-indigo-600 text-white rounded-md hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
           >
