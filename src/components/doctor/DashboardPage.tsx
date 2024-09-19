@@ -78,10 +78,11 @@ function DashboardPage() {
             type: 'Clinic Consulting',
           }, {
             id: 'Apt0005',
-            name: 'Robert Hutchinson',
-            date: '28 Oct 2024 05.30 PM',
-            type: 'General',
-          }].map(appointment => (
+            name: 'Catherine Griffin',
+            date: '01 Nov 2024 04.00 PM',
+            type: 'Clinic Consulting',
+          }
+        ].map(appointment => (
             <div key={appointment.id} className='flex items-center justify-between p-1'>
               <img className='w-16 h-16' src="https://doccure.dreamstechnologies.com/html/template/assets/img/doctors-dashboard/profile-01.jpg" alt="" />
               <div className='flex-1 ml-4'>

@@ -8,7 +8,7 @@ function SignupPage() {
     const route = useRouter();
     return (
         <>
-            <div className='flex justify-center'>
+            <div className='flex justify-center '>
                 <div className='mt-10'>
                     <button className='flex gap-4 items-center'><ArrowLeftOutlined onClick={()=>route.push("/login")}/>
                         Back to Login</button>
