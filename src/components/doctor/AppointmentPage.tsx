@@ -35,7 +35,7 @@ function AppointmentPage() {
         <button className='border rounded-lg px-5 py-2 mt-3'><FilterFilled /> Filter By <CaretDownFilled /></button>
       </div>
 
-      <div className="overflow-scroll  lg:overflow--hidden">
+      <div className="overflow-scroll  lg:overflow-hidden">
 
        
         <div className="mt-5  flex  items-center  justify-between lg:hover:bg-green-100 lg:shadow-md p-4 gap-10">

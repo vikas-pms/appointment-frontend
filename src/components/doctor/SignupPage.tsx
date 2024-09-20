@@ -5,7 +5,7 @@ import { useState } from 'react';
 
 function SignupPage() {
 
-    const router = useRouter()
+    const route = useRouter()
     const [formData, setFormData] = useState({
         firstName: '',
         lastName: '',
@@ -54,14 +54,16 @@ function SignupPage() {
                     password: '',
                     confirmPassword: '',
                 });
+                route.push("/doctor/login")
 
             } else {
+                throw new Error("email already exists")
                 console.error('Error registering user:', response.statusText);
                 alert('Registration failed. Please try again.');
             }
-        } catch (error) {
+        } catch (error:any) {
             console.error('Error:', error);
-            alert('An error occurred. Please try again.');
+            alert(error.message);
         }
     };
 
@@ -166,7 +168,6 @@ function SignupPage() {
                         </div>
 
                         <button
-                        onClick={()=>router.push("/doctor/login")}
                             type="submit"
                             className="w-full py-2 px-4 bg-indigo-600 text-white rounded-md hover:bg-indigo-700"
                         >
